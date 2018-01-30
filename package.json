@@ -1,0 +1,49 @@
+{
+  "name": "element-controller",
+  "version": "0.1.0",
+  "description": "Simple ui controller with Backbone.js inspired event delegation.",
+  "main": "index.js",
+  "dependencies": {
+    "resolve-handlers": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "babel src --watch --out-dir .",
+    "prepublish": "npm run build",
+    "lint": "eslint src/**.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insector-ab/element-controller.git"
+  },
+  "keywords": [
+    "resolve",
+    "handlers",
+    "strings",
+    "events",
+    "backbone"
+  ],
+  "author": "Martin Söderholm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/insector-ab/element-controller/issues"
+  },
+  "homepage": "https://github.com/insector-ab/element-controller#readme",
+  "contributors": [
+    {
+      "name": "Martin Söderholm",
+      "email": "matte@insector.se"
+    }
+  ]
+}
