@@ -1,4 +1,4 @@
-import {resolveDOMEventHandlers} from './resolve-handlers';
+import {resolveDOMEventHandlers} from 'resolve-handlers';
 
 /**
  * ElementController
