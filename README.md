@@ -12,14 +12,12 @@ npm install element-controller
 
 ## Example usage
 ```javascript
-import ElementController from './element-controller';
+import ElementController from 'element-controller';
 
-/**
- * CommentController
- */
+// new CommentController(commentsContainerElement)
 export default class CommentController extends ElementController {
 
-  getEventHandlerStrings() {
+  getDOMEventHandlerStrings() {
     return [
       'click .comment > .btn-delete: onDeleteCommentClick',
       'focusin .comment: onCommentFocus',
