@@ -9,35 +9,50 @@ export default class ElementController {
     // Target for event listeners
     this._element = element;
     // Resolve event handlers
-    this._resolvedEventHandlers = resolveDOMEventHandlers(this.getEventHandlerStrings(), this);
-    // Add event listeners
-    this.addEventListeners();
+    this._resolvedEventHandlers = resolveDOMEventHandlers(this.getDOMEventHandlerStrings(), this);
+    // Add DOM event listeners
+    this.addDOMEventListeners();
   }
 
   get element() {
     return this._element;
   }
 
-  getEventHandlerStrings() {
+  getDOMEventHandlerStrings() {
     return [];
   }
 
   dispose() {
-    this.removeEventListeners();
+    this.removeDOMEventListeners();
+    this._dispose();
+    this._deleteReferences();
+  }
+
+  addDOMEventListeners() {
+    const element = this.element;
+    if (element) {
+      this._resolvedEventHandlers.forEach(eventHandler => {
+        element.addEventListener(eventHandler.eventType, eventHandler);
+      });
+    }
+  }
+
+  removeDOMEventListeners() {
+    const element = this.element;
+    if (element) {
+      this._resolvedEventHandlers.forEach(eventHandler => {
+        element.removeEventListener(eventHandler.eventType, eventHandler);
+      });
+    }
+  }
+
+  _dispose() {
+    // Abstract
+  }
+
+  _deleteReferences() {
     delete this._resolvedEventHandlers;
     delete this._element;
-  }
-
-  addEventListeners() {
-    this._resolvedEventHandlers.forEach(eventHandler => {
-      this.element.addEventListener(eventHandler.eventType, eventHandler);
-    });
-  }
-
-  removeEventListeners() {
-    this._resolvedEventHandlers.forEach(eventHandler => {
-      this.element.removeEventListener(eventHandler.eventType, eventHandler);
-    });
   }
 
 }
