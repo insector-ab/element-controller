@@ -1,6 +1,6 @@
 {
   "name": "element-controller",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple ui controller with Backbone.js inspired event delegation.",
   "main": "index.js",
   "dependencies": {
