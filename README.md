@@ -12,7 +12,7 @@ npm install element-controller
 
 ## Example usage
 ```javascript
-import ElementController from './element-controller';
+import ElementController from 'element-controller';
 
 /**
  * CommentController
