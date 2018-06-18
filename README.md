@@ -21,7 +21,7 @@ export default class CommentController extends ElementController {
     return [
       'click .comment > .btn-delete: onDeleteCommentClick',
       'focusin .comment: onCommentFocus',
-      'click .comment: onCommentClick',
+      'click .comment: onCommentClick'
     ];
   }
 
@@ -38,8 +38,12 @@ export default class CommentController extends ElementController {
   }
 
 }
-
 ```
+
+## Change log
+
+### 0.2.0
+* Updated dependencies
 
 
 ## License
