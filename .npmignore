@@ -1,8 +1,7 @@
+.eslint*
+.git*
+babel.config.js
+*.sublime-*
+*.tgz
 node_modules
 src
-test
-.babelrc
-.eslintrc
-.gitignore
-.nyc_output
-*.sublime-*

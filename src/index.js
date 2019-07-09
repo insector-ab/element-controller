@@ -1,4 +1,4 @@
-import {resolveDOMEventHandlers} from 'resolve-handlers';
+import { resolveDOMEventHandlers } from 'resolve-handlers';
 
 /**
  * ElementController
@@ -9,7 +9,7 @@ export default class ElementController {
     // Target for event listeners
     this._element = element;
     // Resolve event handlers
-    this._resolvedEventHandlers = resolveDOMEventHandlers(this.getDOMEventHandlerStrings(), this);
+    this._resolvedEventHandlers = resolveDOMEventHandlers.call(this.getDOMEventHandlerStrings());
     // Add DOM event listeners
     this.addDOMEventListeners();
   }
