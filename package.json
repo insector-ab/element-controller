@@ -1,26 +1,27 @@
 {
   "name": "element-controller",
-  "version": "0.2.0",
-  "description": "Simple ui controller with Backbone.js inspired event delegation.",
+  "version": "0.3.0",
+  "description": "Simple UI controller with Backbone.js inspired event delegation.",
   "main": "index.js",
   "dependencies": {
-    "resolve-handlers": "^0.2.0"
+    "resolve-handlers": "^0.3.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.3",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
   },
   "scripts": {
     "build": "babel src --out-dir .",
     "watch": "babel src --watch --out-dir .",
-    "prepublish": "npm run build",
     "lint": "eslint src/**.js"
   },
   "repository": {
