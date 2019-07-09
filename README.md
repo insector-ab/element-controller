@@ -1,6 +1,6 @@
 # ElementController &middot; [![GitHub license](https://img.shields.io/github/license/insector-ab/element-controller.svg)](https://github.com/insector-ab/element-controller/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/element-controller.svg?style=flat)](https://www.npmjs.com/package/element-controller)
 
-Simple ui controller with [Backbone.js](http://backbonejs.org/#Events) inspired event delegation.
+Simple UI controller with [Backbone.js](http://backbonejs.org/#Events) inspired event delegation.
 
 
 ## Installation
@@ -41,6 +41,9 @@ export default class CommentController extends ElementController {
 ```
 
 ## Change log
+
+### 0.3.0
+* Dev env config and dependency updates (eslint, babel, resolve-handlers).
 
 ### 0.2.0
 * Updated dependencies
