@@ -9,7 +9,7 @@ export default class ElementController {
     // Target for event listeners
     this._element = element;
     // Resolve event handlers
-    this._resolvedEventHandlers = resolveDOMEventHandlers.call(this.getDOMEventHandlerStrings());
+    this._resolvedEventHandlers = resolveDOMEventHandlers.call(this, this.getDOMEventHandlerStrings());
     // Add DOM event listeners
     this.addDOMEventListeners();
   }

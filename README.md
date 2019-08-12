@@ -42,6 +42,9 @@ export default class CommentController extends ElementController {
 
 ## Change log
 
+### 0.3.1
+* Bugfix
+
 ### 0.3.0
 * Dev env config and dependency updates (eslint, babel, resolve-handlers).
 
