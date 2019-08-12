@@ -14,12 +14,10 @@ npm install element-controller
 ```javascript
 import ElementController from 'element-controller';
 
-/**
- * CommentController
- */
+// new CommentController(commentsContainerElement)
 export default class CommentController extends ElementController {
 
-  getEventHandlerStrings() {
+  getDOMEventHandlerStrings() {
     return [
       'click .comment > .btn-delete: onDeleteCommentClick',
       'focusin .comment: onCommentFocus',
@@ -43,6 +41,9 @@ export default class CommentController extends ElementController {
 ```
 
 ## Change log
+
+### 0.3.1
+* Bugfix
 
 ### 0.3.0
 * Dev env config and dependency updates (eslint, babel, resolve-handlers).
