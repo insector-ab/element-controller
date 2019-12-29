@@ -42,6 +42,9 @@ export default class CommentController extends ElementController {
 
 ## Change log
 
+### 0.4.0
+* Dependency updates
+
 ### 0.3.1
 * Bugfix
 
